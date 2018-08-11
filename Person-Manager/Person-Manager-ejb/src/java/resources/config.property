@@ -1,0 +1,2 @@
+#Level discharge 0 - all, 1 - only child, 2 - only parent 3 - only Node, 4 - one up and one down node
+levelDischarge = 3

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="orm.entity.Attribute" table="ATTRIBUTES">
+        <id name="id" column="ATTR_ID">
+            <generator class="native">
+                <param name="sequence">SEC_ATTRIBUTES</param>
+            </generator>
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" />
+        </property>
+        <property name="type" type="string">
+            <column name="TYPE" />
+        </property>
+        <property name="single" type="integer">
+            <column name="SINGLE" />
+        </property>
+    </class>
+</hibernate-mapping>

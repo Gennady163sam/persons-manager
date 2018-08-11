@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="orm.entity.Params" table="PARAMETERS">
+        <id name="id" column="ID">
+            <generator class="native">
+                <param name="sequence">SQ_PARAMS</param>
+            </generator>
+        </id>
+        <many-to-one name="person" class="orm.entity.Person" 
+                                column="PERS_ID" not-null="true"  lazy="false"/>
+        <many-to-one name="attribute" class="orm.entity.Attribute" 
+                                column="ATTR_ID" not-null="true" lazy="false"/>
+        
+        <property name="valueString" type="string">
+            <column name="VSTR" />
+        </property>
+        <property name="valueDate" type="date">
+            <column name="VDATE" />
+        </property>
+        <property name="valueNumber" type="integer">
+            <column name="VNUMBER" />
+        </property>
+    </class>
+</hibernate-mapping>

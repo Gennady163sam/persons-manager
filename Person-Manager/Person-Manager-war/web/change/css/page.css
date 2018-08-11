@@ -1,0 +1,138 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26.05.2016, 12:53:30
+    Author     : Генндий
+*/
+
+.loading {
+    display: none;
+}
+.accordion {
+    border: 1px solid #ccc;
+    width:  92%;
+}
+.accordion li h3 a {
+    background:             #666;
+    background:             #666 -webkit-gradient(linear, left top, left bottom, from(#999), to(#666)) no-repeat;
+    background:             #666 -moz-linear-gradient(top,  #999,  #666) no-repeat;
+    border-bottom:          1px solid #333;
+    border-top:             1px solid #ccc;
+    color:                  #fff;
+    display:                block;
+    font-style:             normal;
+    margin:                 0;
+    padding:                5px 10px;
+    text-shadow:            0 -1px 2px #333, #ccc 0 1px 2px;
+}
+.accordion li.active h3 a {
+    background:             #369;
+    background:             #369 -webkit-gradient(linear, left top, left bottom, from(#69c), to(#369)) no-repeat;
+    background:             #369 -moz-linear-gradient(top,  #69c,  #369) no-repeat;
+    border-bottom:          1px solid #036;
+    border-top:             1px solid #9cf;
+    text-shadow:            0 -1px 2px #036, #9cf 0 1px 2px;
+}
+.accordion li.locked h3 a {
+    background:             #963;
+    background:             #963 -webkit-gradient(linear, left top, left bottom, from(#c96), to(#963)) no-repeat;
+    background:             #963 -moz-linear-gradient(top,  #c96,  #963) no-repeat;
+    border-bottom:          1px solid #630;
+    border-top:             1px solid #fc9;
+    text-shadow:            0 -1px 2px #630, #fc9 0 1px 2px;
+}
+.accordion li h3 {
+    margin:         0;
+    padding:        0;
+}
+.accordion .panel {
+    padding:        10px;
+}
+
+h1{
+	font-size:30px;
+	font-weight: bold;
+}
+
+.accord{
+    margin-left:50px;
+}
+
+p{
+    margin-left:50px;
+}
+
+h6{
+    width: 240px;
+    text-align: center;
+    padding:10px;  
+    align-content: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    color:buttontext;
+    background:white;
+    border:none;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, #fff, #f5f5f5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+}
+
+form{
+    width: 1020px;
+    margin:20px auto;
+    padding:15px 20px;
+    background:#f5f5f5;
+    background-color:rgba(245,245,245,0.95);
+    border-radius: 10px;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+#number{
+	margin-left: 22px;
+}
+
+input[type="submit"],input[type="button"]{
+    padding:5px 15px;  
+    margin-left: 10px;
+    font-weight:bold;
+    color:#333;
+    background:white;
+    border:none;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow:0 1px 1px white;
+    cursor: pointer;
+}
+
+input[type="text"]{
+    padding:5px 15px;  
+    margin-left: 10px;
+    color:#333;
+    background:white;
+    border:none;
+    border-radius: 7px;
+    text-shadow:0 1px 1px white;
+}
+
+#back{
+    margin-left:450px;
+}
+
+.hide-field{
+    display:none;
+}
+
+#del-button{
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+
+
